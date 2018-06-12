@@ -1,0 +1,7 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Brady Reed
+${licensePrefix}Umass Lowell INFO3010<#if licenseLast??>
+${licenseLast}
+</#if>

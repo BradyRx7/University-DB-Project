@@ -241,9 +241,13 @@ public class TopLevelMenuForm extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_exitMenuItemActionPerformed
 
+    /**
+     * Commented out until readXML method is fixed
+     *      
     private void loadFromXMLMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadFromXMLMenuItemActionPerformed
         try {
-            
+        
+          
         this.studentDataModel.setListOfStudents(StudentDataModel.readXML());
         
         //This is where the rest of the data model's would have a readXML method
@@ -261,7 +265,9 @@ public class TopLevelMenuForm extends javax.swing.JFrame {
         }
             
     }//GEN-LAST:event_loadFromXMLMenuItemActionPerformed
-
+/**
+ *  Commented out for future development and bug fixing
+ * 
     private void saveToXMLMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveToXMLMenuItemActionPerformed
         try {
             
@@ -281,7 +287,8 @@ public class TopLevelMenuForm extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_saveToXMLMenuItemActionPerformed
-
+    */
+    
     /**
      * @param args the command line arguments
      */

@@ -124,12 +124,12 @@ public class StudentDataModel {
       }
      }
     
-
+    /**
+     * Commented out to be fixed later on
+     * 
     public static ArrayList<Student> readXML() {
 
         ArrayList<Student> listOfStudents = new ArrayList<>();
-        
-        try {
             
         // Get the factory instance
         DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
@@ -222,21 +222,21 @@ public class StudentDataModel {
             //but it involves a loop after reading the data from the XML file
             //it has to do with reading the string data into an arrayList<StudentCourse>
             //but i cannot figure out how to do the parsing of that string data
-            /**
+        
             
-           // StudentCourse sCourse = new StudentCourse();
-
-             * for (i = 0; i < num of Courses); i++)
-             * sCourse.setCourseGrade();
-             * sCourse.setCourseId();
-             * setEnrolledCourses();
-             **/
+//            StudentCourse sCourse = new StudentCourse();
+//             for (i = 0; i < num of Courses); i++) {
+    //             sCourse.setCourseGrade();
+    //             sCourse.setCourseId();
+    //             setEnrolledCourses();
+               }
 
             
 
             //add the classroom to the data model arraylist
+        try {
             listOfStudents.add(newStudent);
-        }
+        
          } // if wrong file name is entered, let Main Menu handle it
         catch (Exception exp) {
             Logger.logError(exp.getMessage());
@@ -247,6 +247,7 @@ public class StudentDataModel {
             
 
             // Re-constitute a person
+            try {
             Student rStudent = new Student();
             rStudent.setName(name.getNodeValue());
             rStudent.setAddress(address.getNodeValue());
@@ -257,5 +258,8 @@ public class StudentDataModel {
             catch (Exception e) {
             Logger.logError(e.getMessage());
             }
+        }    
     }
+    
+    */
 }
